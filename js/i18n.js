@@ -86,6 +86,42 @@ const i18n = {
     "footer.copy":        "© 2025 IPP Ltd. All rights reserved.",
     "footer.terms":       "Terms of use",
     "footer.privacy":     "Privacy",
+
+    /* — company.html */
+    "company.hero.eyebrow": "Company",
+    "company.hero.h1":      "A Houston-based energy holding company.",
+
+    "company.s1.eyebrow":        "Since 1919",
+    "company.s1.h2":             "Over a century of continuous oil production in Patagonia.",
+    "company.s1.p":              "IPP Ltd holds and manages hydrocarbon concessions in Argentina through its operating subsidiary IPP Oil &amp; Gas. Our Alberto and Don Ernesto fields, located in the Golfo San Jorge Basin near Comodoro Rivadavia, Chubut, have been in continuous production since 1919 — making them among the longest-running oil operations in Argentina.",
+    "company.s1.stat1.num":      "1919",
+    "company.s1.stat1.label":    "Year operations began",
+    "company.s1.stat2.num":      "100+",
+    "company.s1.stat2.label":    "Years of uninterrupted production",
+
+    "company.s2.eyebrow":        "Corporate Structure",
+    "company.s2.h2":             "IPP Ltd and IPP Oil &amp; Gas.",
+    "company.s2.card1.name":     "IPP Ltd",
+    "company.s2.card1.tag":      "Houston, Texas — Holding",
+    "company.s2.card1.p":        "IPP Ltd is the U.S.-incorporated parent holding company, responsible for strategic direction, investor relations, and asset management across our South American operations.",
+    "company.s2.card2.name":     "IPP Oil &amp; Gas",
+    "company.s2.card2.tag":      "Comodoro Rivadavia — Operadora",
+    "company.s2.card2.p":        "IPP Oil &amp; Gas is our Argentine operating subsidiary, managing day-to-day field operations, production, well interventions, and commercialization of petroleum products across both concessions.",
+
+    "company.s3.eyebrow":        "Our Values",
+    "company.s3.h2":             "The principles that guide every operation.",
+    "company.s3.v1.title":       "Safety",
+    "company.s3.v1.p":           "Every operation begins and ends with safety. We apply rigorous protocols to protect our people, communities, and environment.",
+    "company.s3.v2.title":       "Integrity",
+    "company.s3.v2.p":           "We operate with full transparency and accountability toward our partners, regulators, and the communities where we work.",
+    "company.s3.v3.title":       "Excellence",
+    "company.s3.v3.p":           "We pursue continuous improvement in every process, applying efficient practices and the highest technical standards.",
+    "company.s3.v4.title":       "Sustainability",
+    "company.s3.v4.p":           "We are committed to responsible resource development that balances economic performance with environmental stewardship.",
+
+    "company.s4.h2":             "Ready to learn about our operations?",
+    "company.s4.btn1":           "Our Operations",
+    "company.s4.btn2":           "Contact Us",
   },
 
   /* ── ESPAÑOL ─────────────────────────────────────────────── */
@@ -169,6 +205,42 @@ const i18n = {
     "footer.copy":        "© 2025 IPP Ltd. Todos los derechos reservados.",
     "footer.terms":       "Términos de uso",
     "footer.privacy":     "Privacidad",
+
+    /* — company.html */
+    "company.hero.eyebrow": "Empresa",
+    "company.hero.h1":      "Un holding energético con sede en Houston.",
+
+    "company.s1.eyebrow":        "Desde 1919",
+    "company.s1.h2":             "Más de un siglo de producción petrolera ininterrumpida en la Patagonia.",
+    "company.s1.p":              "IPP Ltd gestiona concesiones de hidrocarburos en Argentina a través de su subsidiaria operadora IPP Oil &amp; Gas. Nuestros campos Alberto y Don Ernesto, ubicados en la Cuenca del Golfo San Jorge cerca de Comodoro Rivadavia, Chubut, están en producción continua desde 1919 — convirtiéndolos en unas de las operaciones petroleras más longevas de Argentina.",
+    "company.s1.stat1.num":      "1919",
+    "company.s1.stat1.label":    "Año de inicio",
+    "company.s1.stat2.num":      "100+",
+    "company.s1.stat2.label":    "Años de producción ininterrumpida",
+
+    "company.s2.eyebrow":        "Estructura Corporativa",
+    "company.s2.h2":             "IPP Ltd e IPP Oil &amp; Gas.",
+    "company.s2.card1.name":     "IPP Ltd",
+    "company.s2.card1.tag":      "Houston, Texas — Holding",
+    "company.s2.card1.p":        "IPP Ltd es la empresa holding matriz constituida en EE.UU., responsable de la dirección estratégica, relaciones con inversores y gestión de activos en nuestras operaciones sudamericanas.",
+    "company.s2.card2.name":     "IPP Oil &amp; Gas",
+    "company.s2.card2.tag":      "Comodoro Rivadavia — Operadora",
+    "company.s2.card2.p":        "IPP Oil &amp; Gas es nuestra subsidiaria operadora argentina, que gestiona las operaciones de campo, producción, intervención de pozos y comercialización de productos petroleros en ambas concesiones.",
+
+    "company.s3.eyebrow":        "Nuestros Valores",
+    "company.s3.h2":             "Los principios que guían cada operación.",
+    "company.s3.v1.title":       "Seguridad",
+    "company.s3.v1.p":           "Cada operación comienza y termina con seguridad. Aplicamos protocolos rigurosos para proteger a nuestro personal, comunidades y medio ambiente.",
+    "company.s3.v2.title":       "Integridad",
+    "company.s3.v2.p":           "Operamos con plena transparencia y responsabilidad hacia nuestros socios, reguladores y las comunidades donde trabajamos.",
+    "company.s3.v3.title":       "Excelencia",
+    "company.s3.v3.p":           "Perseguimos la mejora continua en cada proceso, aplicando prácticas eficientes y los más altos estándares técnicos.",
+    "company.s3.v4.title":       "Sostenibilidad",
+    "company.s3.v4.p":           "Estamos comprometidos con el desarrollo responsable de recursos que equilibra el rendimiento económico con la gestión ambiental.",
+
+    "company.s4.h2":             "¿Listo para conocer nuestras operaciones?",
+    "company.s4.btn1":           "Nuestras Operaciones",
+    "company.s4.btn2":           "Contacto",
   }
 };
 

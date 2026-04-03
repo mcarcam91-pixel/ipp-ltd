@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IPP Ltd — Houston-based energy holding company. Over a century of oil production in the Golfo San Jorge Basin, Patagonia, Argentina." />
+  <title>Company — IPP Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════════════════════ -->
+<header class="site-header" id="site-header">
+  <div class="container">
+    <div class="header__inner">
+
+      <a href="index.html" class="logo" aria-label="IPP Oil &amp; Gas — Home">
+        <svg class="logo-svg" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-label="IPP Oil &amp; Gas">
+          <text x="0" y="28" font-family="Georgia, serif" font-weight="700" font-size="32" fill="#003D96">i</text>
+          <text x="14" y="28" font-family="Georgia, serif" font-weight="700" font-size="32" fill="#DD172F">PP</text>
+          <defs>
+            <linearGradient id="logoLine" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%"   stop-color="#003D96"/>
+              <stop offset="50%"  stop-color="#DD172F"/>
+              <stop offset="100%" stop-color="#C8901A"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="31" width="80" height="1.5" fill="url(#logoLine)"/>
+          <text x="0" y="40" font-family="'Source Sans 3', sans-serif" font-weight="400"
+                font-size="9" fill="#555" letter-spacing="2">OIL &amp; GAS</text>
+        </svg>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="company.html"    data-i18n="nav.company"    class="active">Company</a></li>
+          <li><a href="operations.html" data-i18n="nav.operations">Operations</a></li>
+          <li><a href="products.html"   data-i18n="nav.products">Products</a></li>
+          <li><a href="safety.html"     data-i18n="nav.safety">Safety</a></li>
+          <li><a href="contact.html"    data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__right">
+        <div class="lang-toggle" aria-label="Language selector">
+          <button class="lang-btn lang-active" data-lang="en">EN</button>
+          <span class="lang-toggle__sep" aria-hidden="true">|</span>
+          <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+        <button class="hamburger" id="hamburger"
+                aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="company.html"    data-i18n="nav.company">Company</a>
+    <a href="operations.html" data-i18n="nav.operations">Operations</a>
+    <a href="products.html"   data-i18n="nav.products">Products</a>
+    <a href="safety.html"     data-i18n="nav.safety">Safety</a>
+    <a href="contact.html"    data-i18n="nav.contact">Contact</a>
+  </nav>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE HERO — simple, 60vh, navy con imagen
+════════════════════════════════════════════════════════════ -->
+<section class="page-hero" aria-label="Company page hero">
+  <div class="page-hero__bg" aria-hidden="true"
+       style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=85');"></div>
+  <div class="page-hero__overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="page-hero__content fade-in">
+      <p class="eyebrow" data-i18n="company.hero.eyebrow">Company</p>
+      <h1 data-i18n="company.hero.h1">A Houston-based energy holding company.</h1>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 1 — Historia · split: texto izq, stats der
+════════════════════════════════════════════════════════════ -->
+<section class="section section--cream" aria-labelledby="history-heading">
+  <div class="container">
+    <div class="split-2">
+
+      <div class="fade-in">
+        <p class="eyebrow" data-i18n="company.s1.eyebrow">Since 1919</p>
+        <h2 id="history-heading" data-i18n="company.s1.h2">
+          Over a century of continuous oil production in Patagonia.
+        </h2>
+        <span class="divider-red" aria-hidden="true"></span>
+        <p data-i18n="company.s1.p">
+          IPP Ltd holds and manages hydrocarbon concessions in Argentina through
+          its operating subsidiary IPP Oil &amp; Gas. Our Alberto and Don Ernesto
+          fields, located in the Golfo San Jorge Basin near Comodoro Rivadavia,
+          Chubut, have been in continuous production since 1919 — making them
+          among the longest-running oil operations in Argentina.
+        </p>
+      </div>
+
+      <div class="stat-pair fade-in">
+        <div class="stat-item">
+          <div class="stat-item__num" data-i18n="company.s1.stat1.num">1919</div>
+          <div class="stat-item__label" data-i18n="company.s1.stat1.label">Year operations began</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__num" data-i18n="company.s1.stat2.num">100+</div>
+          <div class="stat-item__label" data-i18n="company.s1.stat2.label">Years of uninterrupted production</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 2 — Estructura corporativa · bg blanco · 2 cards
+════════════════════════════════════════════════════════════ -->
+<section class="section section--white" aria-labelledby="structure-heading">
+  <div class="container">
+
+    <div class="section__intro fade-in">
+      <p class="eyebrow" data-i18n="company.s2.eyebrow">Corporate Structure</p>
+      <h2 id="structure-heading" data-i18n="company.s2.h2">IPP Ltd and IPP Oil &amp; Gas.</h2>
+      <span class="divider-red" aria-hidden="true"></span>
+    </div>
+
+    <div class="grid-2">
+
+      <div class="corp-card fade-in">
+        <p class="corp-card__tag" data-i18n="company.s2.card1.tag">Houston, Texas — Holding</p>
+        <h3 data-i18n="company.s2.card1.name">IPP Ltd</h3>
+        <p data-i18n="company.s2.card1.p">
+          IPP Ltd is the U.S.-incorporated parent holding company, responsible
+          for strategic direction, investor relations, and asset management
+          across our South American operations.
+        </p>
+      </div>
+
+      <div class="corp-card fade-in">
+        <p class="corp-card__tag" data-i18n="company.s2.card2.tag">Comodoro Rivadavia — Operadora</p>
+        <h3 data-i18n="company.s2.card2.name">IPP Oil &amp; Gas</h3>
+        <p data-i18n="company.s2.card2.p">
+          IPP Oil &amp; Gas is our Argentine operating subsidiary, managing
+          day-to-day field operations, production, well interventions, and
+          commercialization of petroleum products across both concessions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 3 — Valores · bg navy · 4 columnas con íconos SVG
+════════════════════════════════════════════════════════════ -->
+<section class="section section--navy" aria-labelledby="values-heading">
+  <div class="container">
+
+    <div class="fade-in">
+      <p class="eyebrow" data-i18n="company.s3.eyebrow">Our Values</p>
+      <h2 id="values-heading" style="color:#fff;" data-i18n="company.s3.h2">
+        The principles that guide every operation.
+      </h2>
+    </div>
+
+    <div class="values-grid">
+
+      <!-- Safety -->
+      <div class="value-card fade-in">
+        <svg class="value-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 3L5 8v10c0 7.18 5.52 13.9 13 15.93C25.48 31.9 31 25.18 31 18V8L18 3z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M12 18l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3 data-i18n="company.s3.v1.title">Safety</h3>
+        <p data-i18n="company.s3.v1.p">
+          Every operation begins and ends with safety. We apply rigorous protocols
+          to protect our people, communities, and environment.
+        </p>
+      </div>
+
+      <!-- Integrity -->
+      <div class="value-card fade-in">
+        <svg class="value-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="18" cy="18" r="14" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 18l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3 data-i18n="company.s3.v2.title">Integrity</h3>
+        <p data-i18n="company.s3.v2.p">
+          We operate with full transparency and accountability toward our partners,
+          regulators, and the communities where we work.
+        </p>
+      </div>
+
+      <!-- Excellence -->
+      <div class="value-card fade-in">
+        <svg class="value-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 3l3.8 7.7 8.5 1.2-6.15 6 1.45 8.5L18 22.3l-7.6 4.1 1.45-8.5-6.15-6 8.5-1.2L18 3z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <h3 data-i18n="company.s3.v3.title">Excellence</h3>
+        <p data-i18n="company.s3.v3.p">
+          We pursue continuous improvement in every process, applying efficient
+          practices and the highest technical standards.
+        </p>
+      </div>
+
+      <!-- Sustainability -->
+      <div class="value-card fade-in">
+        <svg class="value-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 32c0 0-13-8-13-18a13 13 0 0 1 26 0c0 10-13 18-13 18z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M18 32V16M12 22c2-3 6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3 data-i18n="company.s3.v4.title">Sustainability</h3>
+        <p data-i18n="company.s3.v4.p">
+          We are committed to responsible resource development that balances
+          economic performance with environmental stewardship.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 4 — CTA final · bg crema · 2 botones
+════════════════════════════════════════════════════════════ -->
+<section class="section cta-section" aria-label="Call to action">
+  <div class="container">
+    <div class="fade-in">
+      <h2 data-i18n="company.s4.h2">Ready to learn about our operations?</h2>
+      <div class="btn-group">
+        <a href="operations.html" class="btn btn--primary" data-i18n="company.s4.btn1">Our Operations</a>
+        <a href="contact.html"    class="btn btn--outline" data-i18n="company.s4.btn2">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__main">
+
+      <div class="footer__col">
+        <a href="index.html" class="logo" aria-label="IPP Oil &amp; Gas">
+          <svg class="logo-svg" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-label="IPP Oil &amp; Gas">
+            <text x="0" y="28" font-family="Georgia, serif" font-weight="700" font-size="32" fill="#fff">i</text>
+            <text x="14" y="28" font-family="Georgia, serif" font-weight="700" font-size="32" fill="#DD172F">PP</text>
+            <defs>
+              <linearGradient id="logoLine-footer" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%"   stop-color="#fff"/>
+                <stop offset="50%"  stop-color="#DD172F"/>
+                <stop offset="100%" stop-color="#C8901A"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="31" width="80" height="1.5" fill="url(#logoLine-footer)"/>
+            <text x="0" y="40" font-family="'Source Sans 3', sans-serif" font-weight="300"
+                  font-size="9" fill="rgba(255,255,255,0.5)" letter-spacing="2">OIL &amp; GAS</text>
+          </svg>
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">
+          IPP Ltd manages energy assets in South America with over a century of operational history in Patagonia, Argentina.
+        </p>
+        <a href="contact.html" class="cta-arrow footer__cta">
+          <span class="cta-arrow__icon" aria-hidden="true">→</span>
+          <span class="cta-arrow__text" data-i18n="footer.contact.cta">Contact us</span>
+        </a>
+      </div>
+
+      <div>
+        <nav class="footer-accordion" aria-label="Footer navigation" id="footer-accordion">
+
+          <div class="footer-accordion__item">
+            <button class="footer-accordion__btn" aria-expanded="false"
+                    aria-controls="facc-1" data-i18n="footer.acc1.title">
+              Get to know us
+              <span class="footer-accordion__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="footer-accordion__panel" id="facc-1">
+              <a href="company.html"    data-i18n="nav.company">Company</a>
+              <a href="operations.html" data-i18n="nav.operations">Operations</a>
+              <a href="products.html"   data-i18n="nav.products">Products</a>
+              <a href="safety.html"     data-i18n="nav.safety">Safety</a>
+            </div>
+          </div>
+
+          <div class="footer-accordion__item">
+            <button class="footer-accordion__btn" aria-expanded="false"
+                    aria-controls="facc-2" data-i18n="footer.acc2.title">
+              Our Operations
+              <span class="footer-accordion__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="footer-accordion__panel" id="facc-2">
+              <a href="operations.html">Alberto Field</a>
+              <a href="operations.html">Don Ernesto Field</a>
+              <a href="products.html"  data-i18n="nav.products">Products</a>
+            </div>
+          </div>
+
+          <div class="footer-accordion__item">
+            <button class="footer-accordion__btn" aria-expanded="false"
+                    aria-controls="facc-3" data-i18n="footer.acc3.title">
+              Legal
+              <span class="footer-accordion__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="footer-accordion__panel" id="facc-3">
+              <a href="contact.html" data-i18n="nav.contact">Contact</a>
+              <p class="footer__address" style="padding-block: 6px;">
+                <strong data-i18n="footer.subsidiary">IPP Oil &amp; Gas</strong><br/>
+                <span data-i18n="footer.address2">Comodoro Rivadavia, Chubut, Argentina</span><br/>
+                <a href="mailto:info@ippltd.net" style="color: var(--color-blue-bright);">info@ippltd.net</a>
+              </p>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy" data-i18n="footer.copy">© 2025 IPP Ltd. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#" data-i18n="footer.terms">Terms of use</a>
+        <a href="#" data-i18n="footer.privacy">Privacy</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
