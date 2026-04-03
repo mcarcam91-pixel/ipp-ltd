@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70" width="220" height="70">
+  <defs>
+
+    <!-- ── SYMBOL: light version (fondos claros) ── -->
+    <symbol id="logo-light" viewBox="0 0 220 70">
+
+      <!-- Franjas diagonales curvadas -->
+      <!-- Franja superior: azul oscuro -->
+      <path d="M72 8 Q110 2 152 10 L148 20 Q106 12 68 18 Z"
+            fill="#1A3A8C"/>
+      <!-- Franja media: rojo -->
+      <path d="M68 24 Q108 16 150 24 L146 34 Q104 26 64 34 Z"
+            fill="#CC2222"/>
+      <!-- Franja inferior: rojo claro -->
+      <path d="M64 40 Q106 30 148 40 L144 50 Q100 40 60 50 Z"
+            fill="#E84444"/>
+
+      <!-- Texto "iPP" -->
+      <!-- i en azul -->
+      <text x="8" y="36"
+            font-family="Arial Narrow, Arial, Helvetica, sans-serif"
+            font-weight="700"
+            font-size="34"
+            fill="#1A3A8C"
+            letter-spacing="-1">i</text>
+      <!-- PP en rojo -->
+      <text x="22" y="36"
+            font-family="Arial Narrow, Arial, Helvetica, sans-serif"
+            font-weight="700"
+            font-size="34"
+            fill="#CC2222"
+            letter-spacing="-1">PP</text>
+
+      <!-- Texto "Oil &amp; Gas" -->
+      <text x="8" y="52"
+            font-family="Arial, Helvetica, sans-serif"
+            font-weight="400"
+            font-size="11"
+            fill="#444444"
+            letter-spacing="0.5">Oil &amp; Gas</text>
+
+    </symbol>
+
+    <!-- ── SYMBOL: dark version (fondos oscuros) ── -->
+    <symbol id="logo-dark" viewBox="0 0 220 70">
+
+      <!-- Franjas diagonales curvadas (iguales) -->
+      <path d="M72 8 Q110 2 152 10 L148 20 Q106 12 68 18 Z"
+            fill="#1A3A8C"/>
+      <path d="M68 24 Q108 16 150 24 L146 34 Q104 26 64 34 Z"
+            fill="#CC2222"/>
+      <path d="M64 40 Q106 30 148 40 L144 50 Q100 40 60 50 Z"
+            fill="#E84444"/>
+
+      <!-- i en azul claro para contraste sobre oscuro -->
+      <text x="8" y="36"
+            font-family="Arial Narrow, Arial, Helvetica, sans-serif"
+            font-weight="700"
+            font-size="34"
+            fill="#4A6ABF"
+            letter-spacing="-1">i</text>
+      <!-- PP en rojo -->
+      <text x="22" y="36"
+            font-family="Arial Narrow, Arial, Helvetica, sans-serif"
+            font-weight="700"
+            font-size="34"
+            fill="#CC2222"
+            letter-spacing="-1">PP</text>
+
+      <!-- "Oil &amp; Gas" en blanco para fondos oscuros -->
+      <text x="8" y="52"
+            font-family="Arial, Helvetica, sans-serif"
+            font-weight="400"
+            font-size="11"
+            fill="#FFFFFF"
+            letter-spacing="0.5">Oil &amp; Gas</text>
+
+    </symbol>
+
+  </defs>
+
+  <!-- Vista de referencia: muestra la versión light por defecto -->
+  <use href="#logo-light" width="220" height="70"/>
+
+</svg>
