@@ -7,11 +7,12 @@
 :root {
   --color-bg:          #F8F6F0;
   --color-bg-white:    #FFFFFF;
-  --color-navy:        #003D96;
-  --color-navy-dark:   #002A6B;
-  --color-navy-light:  #E8EEF8;
-  --color-red:         #DD172F;
-  --color-red-dark:    #B5000F;
+  --color-navy:        #006DB8;
+  --color-navy-dark:   #0B2D71;
+  --color-navy-light:  #E6F4FB;
+  --color-red:         #FE0032;
+  --color-red-dark:    #CC0028;
+  --color-blue-hover:  #009DD9;
   --color-blue-bright: #0092D4;
   --color-teal:        #0A8080;
   --color-text:        #1A1A2E;
@@ -267,6 +268,15 @@ p {
 
 .logo-svg { height: 44px; width: auto; }
 .footer__col .logo-svg { height: 32px; margin-bottom: 20px; }
+.logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+/* Footer logo más pequeño */
+.footer-logo .logo-img {
+  height: 32px;
+}
 
 /* Desktop nav */
 .site-nav { display: none; }
