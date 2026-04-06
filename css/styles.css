@@ -281,9 +281,10 @@ p {
   display: block;
   object-fit: contain;
 }
-/* Footer logo más pequeño */
+/* Footer logo — más pequeño y blanco sobre fondo oscuro */
 .footer-logo .logo-img {
   height: 44px;
+  filter: brightness(0) invert(1);
 }
 
 /* Desktop nav */
