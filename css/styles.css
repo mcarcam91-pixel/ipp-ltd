@@ -269,13 +269,14 @@ p {
 .logo-svg { height: 44px; width: auto; }
 .footer__col .logo-svg { height: 32px; margin-bottom: 20px; }
 .logo-img {
-  height: 44px;
+  height: 56px;
   width: auto;
   display: block;
+  object-fit: contain;
 }
 /* Footer logo más pequeño */
 .footer-logo .logo-img {
-  height: 32px;
+  height: 40px;
 }
 
 /* Desktop nav */
