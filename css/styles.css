@@ -17,8 +17,8 @@
   --color-text-muted:  #5A6478;
   --color-border:      rgba(0,109,184,0.15);
 
-  --font-serif:  'Libre Baskerville', Georgia, serif;
-  --font-sans:   'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
+  --font-serif:  'Montserrat', sans-serif;
+  --font-sans:   'Source Sans 3', system-ui, sans-serif;
 
   --max-width:   1200px;
   --section-pad: clamp(80px, 10vw, 120px);
@@ -57,7 +57,8 @@ h1, h2, h3, h4 {
   line-height: 1.15;
   color: var(--color-navy);
 }
-h2 { font-size: clamp(2rem, 4vw, 3.25rem); }
+h1 { font-weight: 900; }
+h2 { font-size: clamp(2rem, 4vw, 3.25rem); font-weight: 700; }
 h3 { font-size: clamp(1.1rem, 2vw, 1.35rem); }
 
 p {
