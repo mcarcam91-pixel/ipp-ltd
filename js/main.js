@@ -4,40 +4,46 @@
    Sin librerías externas.
    ============================================================= */
 
-document.addEventListener("DOMContentLoaded", () => {
+/* ─── 1. HEADER: smart transparent/scrolled state ────────────
+   Corre inmediatamente (script al final del body = DOM listo).
+   También se re-ejecuta en DOMContentLoaded y en scroll.
+   ─────────────────────────────────────────────────────────── */
+const header = document.getElementById("site-header");
 
-  /* ─── 1. HEADER: smart transparent/scrolled state ────────── */
-  const header = document.getElementById("site-header");
+if (header) {
+  function updateHeader() {
+    const scrolled = window.scrollY > 80;
+    const hasHero  = document.querySelector(".hero-carousel, .page-hero");
+    const footer   = document.querySelector(".site-footer");
 
-  if (header) {
-    function updateHeader() {
-      const scrolled = window.scrollY > 80;
-      const hasHero  = document.querySelector(".hero-carousel, .page-hero");
-      const footer   = document.querySelector(".site-footer");
-
-      if (hasHero) {
-        header.classList.toggle("header--transparent", !scrolled);
-      }
-
-      header.classList.toggle("scrolled", scrolled);
-
-      /* Hide header when footer scrolls into view */
-      let footerVisible = false;
-      if (footer) {
-        footerVisible = footer.getBoundingClientRect().top < window.innerHeight;
-      }
-      header.classList.toggle("header--hidden", footerVisible);
-    }
-
-    /* Run immediately if DOM ready, otherwise wait for it */
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", updateHeader);
+    if (hasHero) {
+      header.classList.toggle("header--transparent", !scrolled);
     } else {
-      updateHeader();
+      header.classList.remove("header--transparent");
     }
 
-    window.addEventListener("scroll", updateHeader, { passive: true });
+    header.classList.toggle("scrolled", scrolled);
+
+    /* Ocultar header cuando el footer entra en viewport */
+    let footerVisible = false;
+    if (footer) {
+      footerVisible = footer.getBoundingClientRect().top < window.innerHeight;
+    }
+    header.classList.toggle("header--hidden", footerVisible);
   }
+
+  /* Ejecutar de forma síncrona e inmediata */
+  updateHeader();
+
+  /* Re-ejecutar en DOMContentLoaded por si acaso */
+  document.addEventListener("DOMContentLoaded", updateHeader);
+
+  window.addEventListener("scroll", updateHeader, { passive: true });
+}
+
+
+/* ─── El resto requiere DOM completamente listo ─────────────── */
+document.addEventListener("DOMContentLoaded", () => {
 
   /* ─── 2. HAMBURGER MENU ───────────────────────────────────── */
   const hamburger  = document.getElementById("hamburger");
@@ -69,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  /* ─── 3b. HERO CAROUSEL ──────────────────────────────────── */
+  /* ─── 4. HERO CAROUSEL ───────────────────────────────────── */
   const carousel = document.getElementById("hero-carousel");
 
   if (carousel) {
@@ -108,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startTimer();
   }
 
-  /* ─── 4. SCROLL ANIMATIONS (fade-in + float-in) ─────────── */
+  /* ─── 5. SCROLL ANIMATIONS (fade-in + float-in) ─────────── */
   const animEls = document.querySelectorAll(".fade-in, .float-in");
 
   if ("IntersectionObserver" in window && animEls.length) {
