@@ -281,10 +281,9 @@ p {
   display: block;
   object-fit: contain;
 }
-/* Footer logo — más pequeño y blanco sobre fondo oscuro */
+/* Footer logo — más pequeño */
 .footer-logo .logo-img {
   height: 44px;
-  filter: brightness(0) invert(1);
 }
 
 /* Desktop nav */
@@ -1219,9 +1218,10 @@ p {
    contact.html arranca blanco (hero sólido, sin .page-hero__bg).
    ═══════════════════════════════════════════════════════════ */
 
-/* Añadir transiciones de color al header base */
+/* Añadir transiciones al header base (incluye transform para hide/show) */
 .site-header {
-  transition: background 0.35s ease,
+  transition: transform 0.35s ease,
+              background 0.35s ease,
               box-shadow 0.35s ease,
               border-color 0.35s ease;
 }
@@ -1262,4 +1262,9 @@ p {
 .site-header.scrolled .logo-img,
 .site-header:not(.header--transparent) .logo-img {
   height: 52px;
+}
+
+/* Header oculto cuando el footer entra en viewport */
+.site-header.header--hidden {
+  transform: translateY(-100%);
 }

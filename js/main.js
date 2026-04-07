@@ -18,12 +18,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const hasImageHero = document.querySelector(".hero-carousel") ||
                          document.querySelector(".page-hero .page-hero__bg");
 
+    const siteFooter = document.querySelector(".site-footer");
+
     function updateHeader() {
       const scrolled = window.scrollY > 80;
+
+      /* Transparent only on pages with a bg-image hero, not on contact.html */
       if (hasImageHero) {
         header.classList.toggle("header--transparent", !scrolled);
       }
+
       header.classList.toggle("scrolled", scrolled);
+
+      /* Hide header when footer scrolls into view */
+      let footerVisible = false;
+      if (siteFooter) {
+        footerVisible = siteFooter.getBoundingClientRect().top < window.innerHeight;
+      }
+      header.classList.toggle("header--hidden", footerVisible);
     }
 
     updateHeader();
