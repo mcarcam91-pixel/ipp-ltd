@@ -6,15 +6,28 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* ─── 1. HEADER: transparent at top → dark on scroll ─────── */
+  /* ─── 1. HEADER: smart transparent/scrolled state ────────── */
   const header = document.getElementById("site-header");
 
   if (header) {
-    const onScroll = () => {
-      header.classList.toggle("scrolled", window.scrollY > 20);
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll(); /* run once on load */
+    /*
+     * Transparent only when a hero with a background image is present.
+     * contact.html has .page-hero but no .page-hero__bg (solid bg),
+     * so it is intentionally excluded.
+     */
+    const hasImageHero = document.querySelector(".hero-carousel") ||
+                         document.querySelector(".page-hero .page-hero__bg");
+
+    function updateHeader() {
+      const scrolled = window.scrollY > 80;
+      if (hasImageHero) {
+        header.classList.toggle("header--transparent", !scrolled);
+      }
+      header.classList.toggle("scrolled", scrolled);
+    }
+
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
   }
 
   /* ─── 2. HAMBURGER MENU ───────────────────────────────────── */
