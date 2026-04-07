@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IPP Oil &amp; Gas operates two producing oil concessions in the Golfo San Jorge Basin, Patagonia, Argentina — in continuous production since 1919." />
+  <title>Operations — IPP Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/ipp-logo-ipp-hd.png">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════════════════════ -->
+<header class="site-header" id="site-header">
+  <div class="container">
+    <div class="header__inner">
+
+      <a href="index.html" class="logo" aria-label="IPP Oil &amp; Gas — Home">
+        <img src="assets/ipp-logo-transparente.svg" alt="IPP Oil &amp; Gas" class="logo-img">
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="company.html"    data-i18n="nav.company">Company</a></li>
+          <li><a href="operations.html" data-i18n="nav.operations" class="active">Operations</a></li>
+          <li><a href="products.html"   data-i18n="nav.products">Products</a></li>
+          <li><a href="safety.html"     data-i18n="nav.safety">Safety</a></li>
+          <li><a href="contact.html"    data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__right">
+        <div class="lang-toggle" aria-label="Language selector">
+          <button class="lang-btn lang-active" data-lang="en">EN</button>
+          <span class="lang-toggle__sep" aria-hidden="true">|</span>
+          <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+        <button class="hamburger" id="hamburger"
+                aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="company.html"    data-i18n="nav.company">Company</a>
+    <a href="operations.html" data-i18n="nav.operations">Operations</a>
+    <a href="products.html"   data-i18n="nav.products">Products</a>
+    <a href="safety.html"     data-i18n="nav.safety">Safety</a>
+    <a href="contact.html"    data-i18n="nav.contact">Contact</a>
+  </nav>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE HERO — 60vh · bg navy-dark · imagen campo petrolero
+════════════════════════════════════════════════════════════ -->
+<section class="page-hero" aria-label="Operations page hero">
+  <div class="page-hero__bg" aria-hidden="true"
+       style="background-image: url('https://picsum.photos/1920/800?random=20');"></div>
+  <div class="page-hero__overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="page-hero__content fade-in">
+      <p class="eyebrow" data-i18n="ops.hero.eyebrow">Operations</p>
+      <h1 data-i18n="ops.hero.h1">Two producing oil fields in the heart of Patagonia.</h1>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 1 — Introducción · bg crema · centrada
+════════════════════════════════════════════════════════════ -->
+<section class="section section--cream section-centered" aria-labelledby="ops-basin-heading">
+  <div class="container">
+    <div class="fade-in">
+      <p class="eyebrow" data-i18n="ops.s1.eyebrow">Golfo San Jorge Basin</p>
+      <h2 id="ops-basin-heading" data-i18n="ops.s1.h2">Over a century of continuous production.</h2>
+      <span class="divider-red" style="margin-inline: auto;" aria-hidden="true"></span>
+      <p data-i18n="ops.s1.p">IPP Oil &amp; Gas operates the Alberto and Don Ernesto concessions in the Golfo San Jorge Basin, Province of Chubut, Argentina — located approximately 5 kilometers from the city of Comodoro Rivadavia. Hydrocarbon extraction in these fields began in 1919, making them among the longest continuously producing concessions in Argentina.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 2 — Dos campos · bg blanco · 2 cards con imagen
+════════════════════════════════════════════════════════════ -->
+<section class="section section--white" aria-labelledby="ops-fields-heading">
+  <div class="container">
+
+    <div class="section__intro fade-in" style="text-align: center;">
+      <h2 id="ops-fields-heading" data-i18n="ops.s2.h2" style="margin-inline: auto;">Our two concessions.</h2>
+      <span class="divider-red" style="margin-inline: auto;" aria-hidden="true"></span>
+    </div>
+
+    <div class="grid-2">
+
+      <!-- Card Alberto -->
+      <div class="field-card float-in">
+        <img src="https://picsum.photos/600/400?random=21"
+             alt="Alberto Field — Golfo San Jorge Basin"
+             class="field-card__img" loading="lazy" />
+        <div class="field-card__body">
+          <p class="eyebrow" data-i18n="ops.s2.card1.eyebrow">Field Alberto</p>
+          <h3 data-i18n="ops.s2.card1.h3">Alberto Field</h3>
+          <p data-i18n="ops.s2.card1.p">The Alberto concession covers approximately 197 hectares in the central northern flank of the Golfo San Jorge Basin. With 132 wells drilled throughout its history, the field contains certified proven reserves and benefits from fully developed operational infrastructure including electrical substations and direct pipeline access to regional export terminals.</p>
+        </div>
+      </div>
+
+      <!-- Card Don Ernesto -->
+      <div class="field-card float-in">
+        <img src="https://picsum.photos/600/400?random=22"
+             alt="Don Ernesto Field — Golfo San Jorge Basin"
+             class="field-card__img" loading="lazy" />
+        <div class="field-card__body">
+          <p class="eyebrow" data-i18n="ops.s2.card2.eyebrow">Field Don Ernesto</p>
+          <h3 data-i18n="ops.s2.card2.h3">Don Ernesto Field</h3>
+          <p data-i18n="ops.s2.card2.p">The Don Ernesto concession covers approximately 99 hectares, with 159 wells drilled during its production history. The field shares the geological characteristics of the Golfo San Jorge Basin, with reservoirs located at approximately 2,000 meters depth within proven productive formations including Mina El Carmen, Comodoro Rivadavia, and Salamanca.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 3 — Infraestructura · bg navy · 4 columnas con ícono
+════════════════════════════════════════════════════════════ -->
+<section class="section section--navy" aria-labelledby="ops-infra-heading">
+  <div class="container">
+
+    <div class="fade-in">
+      <p class="eyebrow eyebrow--light" data-i18n="ops.s3.eyebrow">Infrastructure</p>
+      <h2 id="ops-infra-heading" style="color:#fff;" data-i18n="ops.s3.h2">Established infrastructure supporting immediate production.</h2>
+    </div>
+
+    <div class="values-grid">
+
+      <!-- Electrical -->
+      <div class="value-card fade-in">
+        <svg class="value-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M21 4L11 20h8l-2 12 14-18h-9L21 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <h3 data-i18n="ops.s3.i1.title">Electrical</h3>
+        <p data-i18n="ops.s3.i1.p">Both fields are connected to the regional 13.2 kV high-voltage network through four 500 KVA substations, operating at approximately 10% of installed capacity.</p>
+      </div>
+
+      <!-- Gas -->
+      <div class="value-card fade-in">
+        <svg class="value-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 4c0 7-9 11-9 20a9 9 0 0 0 18 0c0-5-3-8-4-10-1 4-3 5-5 5 2-5 0-11 0-15z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <h3 data-i18n="ops.s3.i2.title">Gas</h3>
+        <p data-i18n="ops.s3.i2.p">Each field contains gas separation facilities with a combined capacity of approximately 50,000 cubic meters per day, connected directly to the Camuzzi Gas del Sur trunk pipeline.</p>
+      </div>
+
+      <!-- Oil Pipeline -->
+      <div class="value-card fade-in">
+        <svg class="value-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 18h28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="11" cy="18" r="4" stroke="currentColor" stroke-width="2"/>
+          <circle cx="25" cy="18" r="4" stroke="currentColor" stroke-width="2"/>
+          <path d="M4 14v8M32 14v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3 data-i18n="ops.s3.i3.title">Oil Pipeline</h3>
+        <p data-i18n="ops.s3.i3.p">Crude oil is transported through an 8-inch pipeline to the Kilómetro 9 storage facility, connecting to a 14-inch trunk line with direct access to the TERMAP export terminal at Caleta Córdova.</p>
+      </div>
+
+      <!-- Special Regime -->
+      <div class="value-card fade-in">
+        <svg class="value-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="8" y="3" width="20" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+          <path d="M13 11h10M13 16h10M13 21h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="22" cy="28" r="5" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 28l1.5 1.5L24 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3 data-i18n="ops.s3.i4.title">Special Regime</h3>
+        <p data-i18n="ops.s3.i4.p">Our concessions operate under Argentina's historic Mining Code, a unique legal framework that provides perpetual ownership rights and exceptional fiscal advantages compared to conventional hydrocarbon operators.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECCIÓN 4 — CTA · bg crema · 2 botones
+════════════════════════════════════════════════════════════ -->
+<section class="section cta-section" aria-label="Call to action">
+  <div class="container">
+    <div class="fade-in">
+      <h2 data-i18n="ops.s4.h2">Interested in our assets?</h2>
+      <div class="btn-group">
+        <a href="contact.html"  class="btn btn--primary" data-i18n="ops.s4.btn1">Contact Us</a>
+        <a href="products.html" class="btn btn--outline" data-i18n="ops.s4.btn2">Our Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__main">
+
+      <div class="footer__col footer-logo">
+        <a href="index.html" class="logo" aria-label="IPP Oil &amp; Gas">
+          <img src="assets/ipp-logo-transparente.svg" alt="IPP Oil &amp; Gas" class="logo-img">
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">
+          IPP Ltd manages energy assets in South America with over a century of operational history in Patagonia, Argentina.
+        </p>
+        <a href="contact.html" class="cta-arrow footer__cta">
+          <span class="cta-arrow__icon" aria-hidden="true">→</span>
+          <span class="cta-arrow__text" data-i18n="footer.contact.cta">Contact us</span>
+        </a>
+      </div>
+
+      <div>
+        <nav class="footer-accordion" aria-label="Footer navigation" id="footer-accordion">
+
+          <div class="footer-accordion__item">
+            <button class="footer-accordion__btn" aria-expanded="false"
+                    aria-controls="facc-1" data-i18n="footer.acc1.title">
+              Get to know us
+              <span class="footer-accordion__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="footer-accordion__panel" id="facc-1">
+              <a href="company.html"    data-i18n="nav.company">Company</a>
+              <a href="operations.html" data-i18n="nav.operations">Operations</a>
+              <a href="products.html"   data-i18n="nav.products">Products</a>
+              <a href="safety.html"     data-i18n="nav.safety">Safety</a>
+            </div>
+          </div>
+
+          <div class="footer-accordion__item">
+            <button class="footer-accordion__btn" aria-expanded="false"
+                    aria-controls="facc-2" data-i18n="footer.acc2.title">
+              Our Operations
+              <span class="footer-accordion__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="footer-accordion__panel" id="facc-2">
+              <a href="operations.html">Alberto Field</a>
+              <a href="operations.html">Don Ernesto Field</a>
+              <a href="products.html"  data-i18n="nav.products">Products</a>
+            </div>
+          </div>
+
+          <div class="footer-accordion__item">
+            <button class="footer-accordion__btn" aria-expanded="false"
+                    aria-controls="facc-3" data-i18n="footer.acc3.title">
+              Legal
+              <span class="footer-accordion__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="footer-accordion__panel" id="facc-3">
+              <a href="contact.html" data-i18n="nav.contact">Contact</a>
+              <p class="footer__address" style="padding-block: 6px;">
+                <strong data-i18n="footer.subsidiary">IPP Oil &amp; Gas</strong><br/>
+                <span data-i18n="footer.address2">Comodoro Rivadavia, Chubut, Argentina</span><br/>
+                <br/>
+                <strong>IPP Ltd</strong><br/>
+                <span>1001 Texas Avenue, Suite 1400<br/>Houston, Texas 77002, USA</span><br/>
+                <br/>
+                <a href="mailto:info@ippltd.net" style="color: var(--color-navy-light);">info@ippltd.net</a>
+              </p>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy" data-i18n="footer.copy">© 2025 IPP Ltd. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#" data-i18n="footer.terms">Terms of use</a>
+        <a href="#" data-i18n="footer.privacy">Privacy</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -122,6 +122,120 @@ const i18n = {
     "company.s4.h2":             "Ready to learn about our operations?",
     "company.s4.btn1":           "Our Operations",
     "company.s4.btn2":           "Contact Us",
+
+    /* — operations.html */
+    "ops.hero.eyebrow":          "OPERATIONS",
+    "ops.hero.h1":               "Two producing oil fields in the heart of Patagonia.",
+
+    "ops.s1.eyebrow":            "GOLFO SAN JORGE BASIN",
+    "ops.s1.h2":                 "Over a century of continuous production.",
+    "ops.s1.p":                  "IPP Oil &amp; Gas operates the Alberto and Don Ernesto concessions in the Golfo San Jorge Basin, Province of Chubut, Argentina — located approximately 5 kilometers from the city of Comodoro Rivadavia. Hydrocarbon extraction in these fields began in 1919, making them among the longest continuously producing concessions in Argentina.",
+
+    "ops.s2.h2":                 "Our two concessions.",
+    "ops.s2.card1.eyebrow":      "FIELD ALBERTO",
+    "ops.s2.card1.h3":           "Alberto Field",
+    "ops.s2.card1.p":            "The Alberto concession covers approximately 197 hectares in the central northern flank of the Golfo San Jorge Basin. With 132 wells drilled throughout its history, the field contains certified proven reserves and benefits from fully developed operational infrastructure including electrical substations and direct pipeline access to regional export terminals.",
+    "ops.s2.card2.eyebrow":      "FIELD DON ERNESTO",
+    "ops.s2.card2.h3":           "Don Ernesto Field",
+    "ops.s2.card2.p":            "The Don Ernesto concession covers approximately 99 hectares, with 159 wells drilled during its production history. The field shares the geological characteristics of the Golfo San Jorge Basin, with reservoirs located at approximately 2,000 meters depth within proven productive formations including Mina El Carmen, Comodoro Rivadavia, and Salamanca.",
+
+    "ops.s3.eyebrow":            "INFRASTRUCTURE",
+    "ops.s3.h2":                 "Established infrastructure supporting immediate production.",
+    "ops.s3.i1.title":           "Electrical",
+    "ops.s3.i1.p":               "Both fields are connected to the regional 13.2 kV high-voltage network through four 500 KVA substations, operating at approximately 10% of installed capacity.",
+    "ops.s3.i2.title":           "Gas",
+    "ops.s3.i2.p":               "Each field contains gas separation facilities with a combined capacity of approximately 50,000 cubic meters per day, connected directly to the Camuzzi Gas del Sur trunk pipeline.",
+    "ops.s3.i3.title":           "Oil Pipeline",
+    "ops.s3.i3.p":               "Crude oil is transported through an 8-inch pipeline to the Kilómetro 9 storage facility, connecting to a 14-inch trunk line with direct access to the TERMAP export terminal at Caleta Córdova.",
+    "ops.s3.i4.title":           "Special Regime",
+    "ops.s3.i4.p":               "Our concessions operate under Argentina's historic Mining Code, a unique legal framework that provides perpetual ownership rights and exceptional fiscal advantages compared to conventional hydrocarbon operators.",
+
+    "ops.s4.h2":                 "Interested in our assets?",
+    "ops.s4.btn1":               "Contact Us",
+    "ops.s4.btn2":               "Our Products",
+
+    /* — products.html */
+    "prod.hero.eyebrow":         "PRODUCTS",
+    "prod.hero.h1":              "A full range of refined petroleum products.",
+
+    "prod.s1.eyebrow":           "COMMERCIALIZATION",
+    "prod.s1.h2":                "Local and international markets.",
+    "prod.s1.p":                 "Through IPP Oil &amp; Gas, we commercialize a comprehensive portfolio of refined petroleum products for local and international buyers. Our direct connection to the TERMAP export terminal at Caleta Córdova enables efficient and continuous delivery to regional and global markets.",
+
+    "prod.s2.h2":                "Our product portfolio.",
+    "prod.s2.p1.name":           "Naphtha",
+    "prod.s2.p1.p":              "High-quality naphtha for petrochemical and refining applications, meeting international specifications.",
+    "prod.s2.p2.name":           "Gas Oil Grade 2",
+    "prod.s2.p2.p":              "Standard diesel fuel for automotive and industrial use, produced to Argentine and international quality standards.",
+    "prod.s2.p3.name":           "Gas Oil Grade 3",
+    "prod.s2.p3.p":              "Premium diesel formulation with enhanced performance characteristics for demanding industrial applications.",
+    "prod.s2.p4.name":           "Fuel Oil",
+    "prod.s2.p4.p":              "Heavy fuel oil for industrial boilers, power generation, and large-scale thermal applications.",
+    "prod.s2.p5.name":           "Marine Gas Oil",
+    "prod.s2.p5.p":              "Marine-grade distillate fuel meeting international maritime standards for vessel propulsion and auxiliary systems.",
+    "prod.s2.p6.name":           "IFO 180\u2013380",
+    "prod.s2.p6.p":              "Intermediate fuel oil blends for marine and industrial use, available in viscosity grades 180 and 380 CST.",
+
+    "prod.s3.eyebrow":           "EXPORT INFRASTRUCTURE",
+    "prod.s3.h2":                "Direct access to international markets.",
+    "prod.s3.p":                 "Our crude oil and refined products are transported through an established pipeline network directly to the TERMAP terminal at Caleta Córdova, Chubut — one of Argentina's primary petroleum export facilities. This infrastructure enables rapid and cost-effective delivery to international buyers without reliance on third-party logistics.",
+
+    "prod.s4.h2":                "Looking to source petroleum products?",
+    "prod.s4.btn1":              "Contact Us",
+
+    /* — safety.html */
+    "sfty.hero.eyebrow":         "SAFETY &amp; QUALITY",
+    "sfty.hero.h1":              "Safety. Quality. Environmental stewardship.",
+
+    "sfty.s1.p":                 "Every operation at IPP Oil &amp; Gas begins and ends with safety. We consider safety an indispensable aspect of all activities — for our personnel, our clients, and the communities where we operate.",
+
+    "sfty.s2.eyebrow":           "OUR APPROACH",
+    "sfty.s2.h2":                "Three pillars of operational excellence.",
+    "sfty.s2.p1.title":          "Safety",
+    "sfty.s2.p1.p":              "We apply rigorous safety protocols across all field operations. All personnel receive in-depth training on the technical characteristics of each product and the safety regulations associated with each operation. Incident prevention controls are mandatory at every stage.",
+    "sfty.s2.p2.title":          "Quality",
+    "sfty.s2.p2.p":              "Our products meet all quality standards, which are verified through periodic controls. We respect, demand, and rigorously follow all legal and management regulations required by the business and needed by our clients. Precision in production is a constant requirement — technical specifications are considered key pillars of our growth.",
+    "sfty.s2.p3.title":          "Environment",
+    "sfty.s2.p3.p":              "We operate with full respect for the environment and the communities surrounding our fields. Environmental impact assessments and responsible resource management are integral to every operational decision at IPP Oil &amp; Gas.",
+
+    "sfty.s3.eyebrow":           "TECHNICAL CAPABILITY",
+    "sfty.s3.h2":                "Advanced analysis and measurement.",
+    "sfty.s3.p":                 "IPP Oil &amp; Gas has significant analytical capacity to control its products using technology applied to hydrocarbons. Research and development of measurement methods is considered a core strength — the ultimate objective is to refine the evaluation of raw materials and confirm that all developed products meet their complete technical specifications.",
+
+    "sfty.s4.h2":                "Want to know more about our operations?",
+    "sfty.s4.btn1":              "Contact Us",
+    "sfty.s4.btn2":              "Our Operations",
+
+    /* — contact.html */
+    "contact.hero.eyebrow":          "CONTACT",
+    "contact.hero.h1":               "Get in touch with IPP Ltd.",
+
+    "contact.s1.form.eyebrow":       "SEND A MESSAGE",
+    "contact.s1.form.h2":            "We'd like to hear from you.",
+    "contact.form.label.name":       "Full Name",
+    "contact.form.label.company":    "Company (optional)",
+    "contact.form.label.email":      "Email",
+    "contact.form.label.phone":      "Phone (optional)",
+    "contact.form.label.subject":    "Subject",
+    "contact.form.label.message":    "Message",
+    "contact.form.subject.default":  "Select a topic\u2026",
+    "contact.form.subject.opt1":     "Commercial inquiry",
+    "contact.form.subject.opt2":     "Investment information",
+    "contact.form.subject.opt3":     "Operations",
+    "contact.form.subject.opt4":     "Other",
+    "contact.form.ph.name":          "Your full name",
+    "contact.form.ph.company":       "Company name",
+    "contact.form.ph.email":         "your@email.com",
+    "contact.form.ph.phone":         "+1 (555) 000-0000",
+    "contact.form.ph.message":       "Tell us about your inquiry\u2026",
+    "contact.form.btn":              "Send Message",
+    "contact.form.note":             "We will respond within 2 business days.",
+
+    "contact.s1.info.eyebrow":       "CONTACT INFORMATION",
+    "contact.s1.info.h4a":           "IPP Ltd (Holding)",
+    "contact.s1.info.h4b":           "IPP Oil &amp; Gas (Operations)",
+
+    "contact.s2.map":                "Map \u2014 Comodoro Rivadavia, Chubut",
   },
 
   /* ── ESPAÑOL ─────────────────────────────────────────────── */
@@ -241,6 +355,120 @@ const i18n = {
     "company.s4.h2":             "¿Listo para conocer nuestras operaciones?",
     "company.s4.btn1":           "Nuestras Operaciones",
     "company.s4.btn2":           "Contacto",
+
+    /* — operations.html */
+    "ops.hero.eyebrow":          "OPERACIONES",
+    "ops.hero.h1":               "Dos yacimientos productivos en el corazón de la Patagonia.",
+
+    "ops.s1.eyebrow":            "CUENCA DEL GOLFO SAN JORGE",
+    "ops.s1.h2":                 "Más de un siglo de producción continua.",
+    "ops.s1.p":                  "IPP Oil &amp; Gas opera las concesiones Alberto y Don Ernesto en la Cuenca del Golfo San Jorge, Provincia de Chubut, Argentina — ubicadas a aproximadamente 5 kilómetros de la ciudad de Comodoro Rivadavia. La extracción de hidrocarburos en estos campos comenzó en 1919, convirtiéndolos en unas de las concesiones en producción continua más longevas de Argentina.",
+
+    "ops.s2.h2":                 "Nuestras dos concesiones.",
+    "ops.s2.card1.eyebrow":      "YACIMIENTO ALBERTO",
+    "ops.s2.card1.h3":           "Yacimiento Alberto",
+    "ops.s2.card1.p":            "La concesión Alberto abarca aproximadamente 197 hectáreas en el flanco central norte de la Cuenca del Golfo San Jorge. Con 132 pozos perforados a lo largo de su historia, el campo contiene reservas probadas certificadas y cuenta con infraestructura operativa completa, incluyendo subestaciones eléctricas y acceso directo por oleoducto a terminales de exportación regionales.",
+    "ops.s2.card2.eyebrow":      "YACIMIENTO DON ERNESTO",
+    "ops.s2.card2.h3":           "Yacimiento Don Ernesto",
+    "ops.s2.card2.p":            "La concesión Don Ernesto abarca aproximadamente 99 hectáreas, con 159 pozos perforados durante su historia productiva. El campo comparte las características geológicas de la Cuenca del Golfo San Jorge, con reservorios ubicados a aproximadamente 2.000 metros de profundidad en formaciones productivas probadas como Mina El Carmen, Comodoro Rivadavia y Salamanca.",
+
+    "ops.s3.eyebrow":            "INFRAESTRUCTURA",
+    "ops.s3.h2":                 "Infraestructura establecida que soporta producción inmediata.",
+    "ops.s3.i1.title":           "Eléctrica",
+    "ops.s3.i1.p":               "Ambos campos están conectados a la red de alta tensión regional de 13,2 kV a través de cuatro subestaciones de 500 KVA, operando al aproximadamente 10% de la capacidad instalada.",
+    "ops.s3.i2.title":           "Gas",
+    "ops.s3.i2.p":               "Cada campo cuenta con instalaciones de separación de gas con una capacidad combinada de aproximadamente 50.000 metros cúbicos por día, conectadas directamente al gasoducto troncal de Camuzzi Gas del Sur.",
+    "ops.s3.i3.title":           "Oleoducto",
+    "ops.s3.i3.p":               "El crudo se transporta a través de un oleoducto de 8 pulgadas hasta la planta de almacenamiento Kilómetro 9, conectándose a un ducto troncal de 14 pulgadas con acceso directo al terminal de exportación TERMAP en Caleta Córdova.",
+    "ops.s3.i4.title":           "Régimen Especial",
+    "ops.s3.i4.p":               "Nuestras concesiones operan bajo el histórico Código de Minería argentino, un marco legal único que otorga derechos de concesión a perpetuidad y ventajas fiscales excepcionales frente a los operadores convencionales de hidrocarburos.",
+
+    "ops.s4.h2":                 "¿Interesado en nuestros activos?",
+    "ops.s4.btn1":               "Contáctenos",
+    "ops.s4.btn2":               "Nuestros Productos",
+
+    /* — products.html */
+    "prod.hero.eyebrow":         "PRODUCTOS",
+    "prod.hero.h1":              "Una gama completa de productos petrolíferos refinados.",
+
+    "prod.s1.eyebrow":           "COMERCIALIZACIÓN",
+    "prod.s1.h2":                "Mercados locales e internacionales.",
+    "prod.s1.p":                 "A través de IPP Oil &amp; Gas, comercializamos una cartera completa de productos petrolíferos refinados para compradores locales e internacionales. Nuestra conexión directa con el terminal de exportación TERMAP en Caleta Córdova permite una entrega eficiente y continua a mercados regionales y globales.",
+
+    "prod.s2.h2":                "Nuestra cartera de productos.",
+    "prod.s2.p1.name":           "Nafta",
+    "prod.s2.p1.p":              "Nafta de alta calidad para aplicaciones petroquímicas y de refinación, cumpliendo especificaciones internacionales.",
+    "prod.s2.p2.name":           "Gas Oil Grado 2",
+    "prod.s2.p2.p":              "Gasoil estándar para uso automotriz e industrial, producido según normas de calidad argentinas e internacionales.",
+    "prod.s2.p3.name":           "Gas Oil Grado 3",
+    "prod.s2.p3.p":              "Formulación premium de gasoil con características de rendimiento mejoradas para aplicaciones industriales exigentes.",
+    "prod.s2.p4.name":           "Fuel Oil",
+    "prod.s2.p4.p":              "Fuel oil pesado para calderas industriales, generación de energía y aplicaciones térmicas a gran escala.",
+    "prod.s2.p5.name":           "Gasoil Marino",
+    "prod.s2.p5.p":              "Combustible marino destilado que cumple estándares marítimos internacionales para propulsión de embarcaciones y sistemas auxiliares.",
+    "prod.s2.p6.name":           "IFO 180\u2013380",
+    "prod.s2.p6.p":              "Mezclas de fuel oil intermedio para uso marino e industrial, disponibles en grados de viscosidad 180 y 380 CST.",
+
+    "prod.s3.eyebrow":           "INFRAESTRUCTURA DE EXPORTACIÓN",
+    "prod.s3.h2":                "Acceso directo a mercados internacionales.",
+    "prod.s3.p":                 "Nuestro crudo y productos refinados se transportan a través de una red de oleoductos establecida directamente al terminal TERMAP en Caleta Córdova, Chubut — una de las principales instalaciones de exportación de petróleo de Argentina. Esta infraestructura permite una entrega rápida y rentable a compradores internacionales sin depender de logística de terceros.",
+
+    "prod.s4.h2":                "¿Busca adquirir productos petrolíferos?",
+    "prod.s4.btn1":              "Contáctenos",
+
+    /* — safety.html */
+    "sfty.hero.eyebrow":         "SEGURIDAD Y CALIDAD",
+    "sfty.hero.h1":              "Seguridad. Calidad. Responsabilidad ambiental.",
+
+    "sfty.s1.p":                 "Cada operación de IPP Oil &amp; Gas comienza y termina con la seguridad. Consideramos la seguridad un aspecto indispensable de toda actividad — para nuestro personal, nuestros clientes y las comunidades donde operamos.",
+
+    "sfty.s2.eyebrow":           "NUESTRO ENFOQUE",
+    "sfty.s2.h2":                "Tres pilares de excelencia operacional.",
+    "sfty.s2.p1.title":          "Seguridad",
+    "sfty.s2.p1.p":              "Aplicamos rigurosos protocolos de seguridad en todas las operaciones de campo. Todo el personal recibe capacitación profunda sobre las características técnicas de cada producto y la normativa de seguridad asociada a cada operación. Los controles de prevención de incidentes son obligatorios en cada etapa.",
+    "sfty.s2.p2.title":          "Calidad",
+    "sfty.s2.p2.p":              "Nuestros productos cumplen con todos los estándares de calidad, verificados mediante controles periódicos. Respetamos, exigimos y seguimos rigurosamente todas las normativas legales y de gestión que el negocio requiere y que los clientes necesitan. La precisión en la producción es una exigencia constante — las especificaciones técnicas son consideradas pilares básicos de nuestro crecimiento.",
+    "sfty.s2.p3.title":          "Medio Ambiente",
+    "sfty.s2.p3.p":              "Operamos con pleno respeto al medio ambiente y a las comunidades que rodean nuestros campos. Las evaluaciones de impacto ambiental y la gestión responsable de recursos son parte integral de cada decisión operativa de IPP Oil &amp; Gas.",
+
+    "sfty.s3.eyebrow":           "CAPACIDAD TÉCNICA",
+    "sfty.s3.h2":                "Análisis y medición avanzados.",
+    "sfty.s3.p":                 "IPP Oil &amp; Gas cuenta con gran capacidad de análisis para controlar sus productos mediante tecnología aplicada a hidrocarburos. La investigación y el desarrollo de métodos de medición es considerada una fortaleza central — el objetivo último es afinar la evaluación de las materias primas y confirmar que los productos cumplen con todas sus especificaciones técnicas.",
+
+    "sfty.s4.h2":                "¿Quiere saber más sobre nuestras operaciones?",
+    "sfty.s4.btn1":              "Contáctenos",
+    "sfty.s4.btn2":              "Nuestras Operaciones",
+
+    /* — contact.html */
+    "contact.hero.eyebrow":          "CONTACTO",
+    "contact.hero.h1":               "Comuníquese con IPP Ltd.",
+
+    "contact.s1.form.eyebrow":       "ENVIAR MENSAJE",
+    "contact.s1.form.h2":            "Nos gustaría saber de usted.",
+    "contact.form.label.name":       "Nombre completo",
+    "contact.form.label.company":    "Empresa (opcional)",
+    "contact.form.label.email":      "Correo electrónico",
+    "contact.form.label.phone":      "Teléfono (opcional)",
+    "contact.form.label.subject":    "Asunto",
+    "contact.form.label.message":    "Mensaje",
+    "contact.form.subject.default":  "Seleccione un tema\u2026",
+    "contact.form.subject.opt1":     "Consulta comercial",
+    "contact.form.subject.opt2":     "Información de inversión",
+    "contact.form.subject.opt3":     "Operaciones",
+    "contact.form.subject.opt4":     "Otro",
+    "contact.form.ph.name":          "Su nombre completo",
+    "contact.form.ph.company":       "Nombre de empresa",
+    "contact.form.ph.email":         "su@correo.com",
+    "contact.form.ph.phone":         "+54 (297) 000-0000",
+    "contact.form.ph.message":       "Cuéntenos sobre su consulta\u2026",
+    "contact.form.btn":              "Enviar Mensaje",
+    "contact.form.note":             "Responderemos dentro de 2 días hábiles.",
+
+    "contact.s1.info.eyebrow":       "INFORMACIÓN DE CONTACTO",
+    "contact.s1.info.h4a":           "IPP Ltd (Holding)",
+    "contact.s1.info.h4b":           "IPP Oil &amp; Gas (Operaciones)",
+
+    "contact.s2.map":                "Mapa \u2014 Comodoro Rivadavia, Chubut",
   }
 };
 
