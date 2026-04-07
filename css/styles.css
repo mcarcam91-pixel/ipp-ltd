@@ -251,20 +251,7 @@ p {
   background: rgba(255,255,255,0.1);
 }
 
-/* ─── 8. HEADER ─────────────────────────────────────────────── */
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 200;
-  background-color: var(--color-bg-white);
-  border-bottom: 2px solid var(--color-navy);
-  transition: box-shadow 0.35s ease;
-}
-.site-header.scrolled {
-  box-shadow: 0 2px 16px rgba(0, 109, 184, 0.10);
-}
+/* ─── 8. HEADER — ver SMART HEADER al final del archivo ─────── */
 
 .header__inner {
   display: flex;
@@ -886,7 +873,7 @@ p {
   display: flex;
   align-items: flex-end;
   padding-bottom: clamp(48px, 8vw, 80px);
-  margin-top: 72px; /* offset fixed header */
+  margin-top: 0; /* header es fixed y se superpone al hero */
 }
 .page-hero__bg {
   position: absolute;
