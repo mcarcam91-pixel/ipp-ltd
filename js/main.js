@@ -10,21 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("site-header");
 
   if (header) {
-    /*
-     * Transparent only when a hero with a background image is present.
-     * contact.html has .page-hero but no .page-hero__bg (solid bg),
-     * so it is intentionally excluded.
-     */
-    const hasImageHero = document.querySelector(".hero-carousel") ||
-                         document.querySelector(".page-hero .page-hero__bg");
-
-    const siteFooter = document.querySelector(".site-footer");
-
     function updateHeader() {
       const scrolled = window.scrollY > 80;
+      const hasHero  = document.querySelector(".hero-carousel, .page-hero");
+      const footer   = document.querySelector(".site-footer");
 
-      /* Transparent only on pages with a bg-image hero, not on contact.html */
-      if (hasImageHero) {
+      if (hasHero) {
         header.classList.toggle("header--transparent", !scrolled);
       }
 
@@ -32,13 +23,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       /* Hide header when footer scrolls into view */
       let footerVisible = false;
-      if (siteFooter) {
-        footerVisible = siteFooter.getBoundingClientRect().top < window.innerHeight;
+      if (footer) {
+        footerVisible = footer.getBoundingClientRect().top < window.innerHeight;
       }
       header.classList.toggle("header--hidden", footerVisible);
     }
 
-    updateHeader();
+    /* Run immediately if DOM ready, otherwise wait for it */
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", updateHeader);
+    } else {
+      updateHeader();
+    }
+
     window.addEventListener("scroll", updateHeader, { passive: true });
   }
 
