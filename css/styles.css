@@ -1287,6 +1287,11 @@ p {
   height: 46px;
   overflow: hidden;
   flex-shrink: 0;
+  border-radius: 6px;
+  transition: background 0.4s ease, padding 0.4s ease;
+}
+@media (min-width: 1024px) {
+  .oil-prices { display: block; }
 }
 
 /* El iframe del widget ocupa todo el contenedor */
@@ -1296,15 +1301,10 @@ p {
   height: 46px !important;
 }
 
-/* Sólo en desktop: mostrar el widget correcto según estado del header */
-@media (min-width: 1024px) {
-  /* Header sólido (scrolled): mostrar light, ocultar dark */
-  .oil-prices--light { display: block; }
-  .oil-prices--dark  { display: none;  }
-
-  /* Header transparente (sobre hero): mostrar dark, ocultar light */
-  .header--transparent .oil-prices--light { display: none;  }
-  .header--transparent .oil-prices--dark  { display: block; }
+/* Header sólido (scrolled): fondo navy para que el texto blanco se vea */
+.site-header.scrolled .oil-prices {
+  background: var(--color-navy);
+  padding: 0 6px;
 }
 
 .footer-logo .logo-img {
