@@ -1288,15 +1288,23 @@ p {
   overflow: hidden;
   flex-shrink: 0;
 }
-@media (min-width: 1024px) {
-  .oil-prices { display: block; }
-}
 
 /* El iframe del widget ocupa todo el contenedor */
 .oil-prices .tradingview-widget-container__widget,
 .oil-prices iframe {
   width: 100% !important;
   height: 46px !important;
+}
+
+/* Sólo en desktop: mostrar el widget correcto según estado del header */
+@media (min-width: 1024px) {
+  /* Header sólido (scrolled): mostrar light, ocultar dark */
+  .oil-prices--light { display: block; }
+  .oil-prices--dark  { display: none;  }
+
+  /* Header transparente (sobre hero): mostrar dark, ocultar light */
+  .header--transparent .oil-prices--light { display: none;  }
+  .header--transparent .oil-prices--dark  { display: block; }
 }
 
 .footer-logo .logo-img {
