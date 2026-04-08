@@ -35,6 +35,20 @@
       </nav>
 
       <div class="header__right">
+        <div class="oil-prices" id="oil-prices">
+          <div class="oil-price-item">
+            <span class="oil-price-label">Brent</span>
+            <span class="oil-price-val" id="price-brent-val">—</span>
+            <span class="oil-price-chg" id="price-brent-chg"></span>
+          </div>
+          <div class="oil-price-sep"></div>
+          <div class="oil-price-item">
+            <span class="oil-price-label">WTI</span>
+            <span class="oil-price-val" id="price-wti-val">—</span>
+            <span class="oil-price-chg" id="price-wti-chg"></span>
+          </div>
+          <div class="oil-price-sep"></div>
+        </div>
         <div class="lang-toggle" aria-label="Language selector">
           <button class="lang-btn lang-active" data-lang="en">EN</button>
           <span class="lang-toggle__sep" aria-hidden="true">|</span>
@@ -270,6 +284,7 @@
 
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+<script src="js/oil-prices.js"></script>
 
 </body>
 </html>

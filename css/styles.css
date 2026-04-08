@@ -1280,6 +1280,63 @@ p {
 .site-header.scrolled .logo-img {
   height: 44px;
 }
+/* ─── OIL PRICES WIDGET ──────────────────────────────── */
+.oil-prices {
+  display: none;
+  align-items: center;
+  gap: 12px;
+}
+@media (min-width: 1024px) {
+  .oil-prices { display: flex; }
+}
+
+.oil-price-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+.oil-price-label {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.oil-price-val {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+  line-height: 1;
+}
+.oil-price-chg {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1;
+}
+.price-up   { color: #16a34a; }
+.price-down { color: var(--color-red); }
+
+.oil-price-sep {
+  width: 1px;
+  height: 28px;
+  background: rgba(0,109,184,0.15);
+}
+
+/* En header transparente los colores se adaptan */
+.site-header.header--transparent .oil-price-label {
+  color: rgba(255,255,255,0.5);
+}
+.site-header.header--transparent .oil-price-val {
+  color: #fff;
+}
+.site-header.header--transparent .oil-price-sep {
+  background: rgba(255,255,255,0.2);
+}
+
 .footer-logo .logo-img {
   height: 40px;
   transition: none;
