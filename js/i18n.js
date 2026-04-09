@@ -236,6 +236,20 @@ const i18n = {
     "contact.s1.info.h4b":           "IPP Oil &amp; Gas (Operations)",
 
     "contact.s2.map":                "Map \u2014 Comodoro Rivadavia, Chubut",
+
+    /* — Rotating text (home) */
+    "rotating.label": "Who we are",
+    "rotating.word1": "Operators",
+    "rotating.word2": "Investors",
+    "rotating.word3": "Partners",
+
+    /* — News section (home) */
+    "news.eyebrow":      "Newsroom",
+    "news.title":        "Latest at IPP",
+    "news.card1.title":  "IPP Oil &amp; Gas reaches new production milestone at Alberto Field",
+    "news.card2.title":  "Don Ernesto Field completes infrastructure upgrade program",
+    "news.card3.title":  "IPP Ltd presents results at Houston energy investor forum",
+    "news.readmore":     "Read more →",
   },
 
   /* ── ESPAÑOL ─────────────────────────────────────────────── */
@@ -469,6 +483,20 @@ const i18n = {
     "contact.s1.info.h4b":           "IPP Oil &amp; Gas (Operaciones)",
 
     "contact.s2.map":                "Mapa \u2014 Comodoro Rivadavia, Chubut",
+
+    /* — Texto rotante (home) */
+    "rotating.label": "Quiénes somos",
+    "rotating.word1": "Operadores",
+    "rotating.word2": "Inversores",
+    "rotating.word3": "Socios",
+
+    /* — Novedades (home) */
+    "news.eyebrow":      "Sala de prensa",
+    "news.title":        "Últimas novedades de IPP",
+    "news.card1.title":  "IPP Oil &amp; Gas alcanza un nuevo hito de producción en el Campo Alberto",
+    "news.card2.title":  "El Campo Don Ernesto completa su programa de mejora de infraestructura",
+    "news.card3.title":  "IPP Ltd presenta resultados en el foro de inversores energéticos de Houston",
+    "news.readmore":     "Leer más →",
   }
 };
 

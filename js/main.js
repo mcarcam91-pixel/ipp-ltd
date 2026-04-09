@@ -134,4 +134,15 @@ document.addEventListener("DOMContentLoaded", () => {
     animEls.forEach(el => el.classList.add("visible"));
   }
 
+  /* ─── 6. ROTATING TEXT ───────────────────────────────── */
+  const rotatingItems = document.querySelectorAll('.rotating-text-item');
+  if (rotatingItems.length) {
+    let current = 0;
+    setInterval(() => {
+      rotatingItems[current].classList.remove('active');
+      current = (current + 1) % rotatingItems.length;
+      rotatingItems[current].classList.add('active');
+    }, 2500);
+  }
+
 });
