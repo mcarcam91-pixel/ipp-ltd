@@ -247,8 +247,11 @@ const i18n = {
     "news.eyebrow":      "Newsroom",
     "news.title":        "Latest at IPP",
     "news.card1.title":  "IPP Oil &amp; Gas reaches new production milestone at Alberto Field",
+    "news.card1.date":   "March 2026",
     "news.card2.title":  "Don Ernesto Field completes infrastructure upgrade program",
+    "news.card2.date":   "February 2026",
     "news.card3.title":  "IPP Ltd presents results at Houston energy investor forum",
+    "news.card3.date":   "January 2026",
     "news.readmore":     "Read more →",
   },
 
@@ -494,8 +497,11 @@ const i18n = {
     "news.eyebrow":      "Sala de prensa",
     "news.title":        "Últimas novedades de IPP",
     "news.card1.title":  "IPP Oil &amp; Gas alcanza un nuevo hito de producción en el Campo Alberto",
+    "news.card1.date":   "Marzo 2026",
     "news.card2.title":  "El Campo Don Ernesto completa su programa de mejora de infraestructura",
+    "news.card2.date":   "Febrero 2026",
     "news.card3.title":  "IPP Ltd presenta resultados en el foro de inversores energéticos de Houston",
+    "news.card3.date":   "Enero 2026",
     "news.readmore":     "Leer más →",
   }
 };
