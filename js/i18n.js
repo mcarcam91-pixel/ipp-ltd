@@ -15,18 +15,18 @@ const i18n = {
     "nav.contact":      "Contact",
 
     /* — Hero carousel — Slide 1 */
-    "slide1.title":  "Unlocking Argentina's Energy Potential.",
-    "slide1.desc":   "IPP Ltd is a Houston-based energy holding company with producing oil assets in Patagonia, Argentina.",
+    "slide1.title":  "Unlocking the energy potential of strategic markets.",
+    "slide1.desc":   "Houston-based energy holding company focused on oil asset management, productive operations and refined product commercialization.",
     "slide1.cta":    "Our Operations",
 
     /* — Hero carousel — Slide 2 */
-    "slide2.title":  "A Century of Producing Oil in Patagonia.",
-    "slide2.desc":   "Our concessions in the Golfo San Jorge Basin have been continuously producing since 1919 — among the longest-running oil operations in Argentina.",
+    "slide2.title":  "Assets, operations and scale for reliable energy.",
+    "slide2.desc":   "We manage and develop assets across markets with a long-term vision, operational discipline and focus on value creation.",
     "slide2.cta":    "Who We Are",
 
     /* — Hero carousel — Slide 3 */
-    "slide3.title":  "Two Concessions. One Century. Uninterrupted Production.",
-    "slide3.desc":   "The Alberto and Don Ernesto fields operate under a unique legal framework that provides exceptional advantages to long-term investors.",
+    "slide3.title":  "Production, refining and commercialization with global vision.",
+    "slide3.desc":   "From oil fields to refined fuels, we build a solid, modern and international energy platform.",
     "slide3.cta":    "Explore the Fields",
 
     /* — Statement section */
@@ -265,18 +265,18 @@ const i18n = {
     "nav.contact":      "Contacto",
 
     /* — Carrusel hero — Slide 1 */
-    "slide1.title":  "Liberando el potencial energético de la Argentina.",
-    "slide1.desc":   "IPP Ltd es un holding energético con sede en Houston, Texas, con activos petroleros productivos en la Patagonia argentina.",
+    "slide1.title":  "Liberando el potencial energético de mercados estratégicos.",
+    "slide1.desc":   "Holding energético con base en Houston, enfocado en la gestión de activos petroleros, operaciones productivas y comercialización de derivados.",
     "slide1.cta":    "Nuestras Operaciones",
 
     /* — Carrusel hero — Slide 2 */
-    "slide2.title":  "Un siglo produciendo petróleo en la Patagonia.",
-    "slide2.desc":   "Nuestras concesiones en la Cuenca del Golfo San Jorge producen ininterrumpidamente desde 1919 — entre las operaciones petroleras más longevas de Argentina.",
+    "slide2.title":  "Activos, operación y escala para una energía confiable.",
+    "slide2.desc":   "Administramos y desarrollamos activos en distintos mercados con una visión de largo plazo, disciplina operativa y foco en valor.",
     "slide2.cta":    "Quiénes Somos",
 
     /* — Carrusel hero — Slide 3 */
-    "slide3.title":  "Dos concesiones. Un siglo. Producción ininterrumpida.",
-    "slide3.desc":   "Los campos Alberto y Don Ernesto operan bajo un marco legal único que otorga ventajas excepcionales a los inversores de largo plazo.",
+    "slide3.title":  "Producción, refinación y comercialización con visión global.",
+    "slide3.desc":   "Desde yacimientos hasta combustibles refinados, construimos una plataforma energética sólida, moderna e internacional.",
     "slide3.cta":    "Explorar los Campos",
 
     /* — Sección statement */

@@ -1,50 +1,48 @@
-/* ─── Oil Prices Widget — Alpha Vantage API ─── */
-(function() {
-  const API_KEY = 'YDCEXMEYW9OAUUFW';
-  const REFRESH = 60000;
+/* ─── Oil Prices — Yahoo Finance (futuros en tiempo real) ─── */
+(function () {
+  const REFRESH   = 60000;           // actualizar cada 60 s
+  const CACHE_KEY = 'ipp_oil_v2';
+  const CACHE_TTL = 5 * 60 * 1000;  // caché 5 min entre páginas
 
-  async function updatePrices() {
+  function set(id, val) {
+    const el = document.getElementById(id);
+    if (el && val != null) el.textContent = '$' + parseFloat(val).toFixed(2);
+  }
+
+  async function fetchPrice(symbol) {
+    const url = 'https://query2.finance.yahoo.com/v8/finance/chart/'
+                + encodeURIComponent(symbol)
+                + '?interval=1m&range=1d';
+    const r = await fetch(url);
+    const d = await r.json();
+    return d.chart.result[0].meta.regularMarketPrice;
+  }
+
+  async function update() {
     try {
-      const brentRes = await fetch(`https://www.alphavantage.co/query?function=BRENT&interval=daily&apikey=${API_KEY}`).then(r => r.json());
-      await new Promise(r => setTimeout(r, 1200));
-      const wtiRes = await fetch(`https://www.alphavantage.co/query?function=WTI&interval=daily&apikey=${API_KEY}`).then(r => r.json());
-
-      const brentData = brentRes.data;
-      const wtiData = wtiRes.data;
-
-      if (brentData && brentData.length >= 2) {
-        const today = parseFloat(brentData[0].value);
-        const yesterday = parseFloat(brentData[1].value);
-        const pct = ((today - yesterday) / yesterday) * 100;
-
-        document.getElementById('price-brent-val').textContent =
-          '$' + today.toFixed(2);
-        document.getElementById('price-brent-chg').innerHTML =
-          pct >= 0
-            ? `<span class="price-up">▲ ${pct.toFixed(2)}%</span>`
-            : `<span class="price-down">▼ ${Math.abs(pct).toFixed(2)}%</span>`;
-      }
-
-      if (wtiData && wtiData.length >= 2) {
-        const today = parseFloat(wtiData[0].value);
-        const yesterday = parseFloat(wtiData[1].value);
-        const pct = ((today - yesterday) / yesterday) * 100;
-
-        document.getElementById('price-wti-val').textContent =
-          '$' + today.toFixed(2);
-        document.getElementById('price-wti-chg').innerHTML =
-          pct >= 0
-            ? `<span class="price-up">▲ ${pct.toFixed(2)}%</span>`
-            : `<span class="price-down">▼ ${Math.abs(pct).toFixed(2)}%</span>`;
-      }
-
-    } catch(e) {
+      const [brent, wti] = await Promise.all([
+        fetchPrice('BZ=F'),   // Brent Crude Futures
+        fetchPrice('CL=F'),   // WTI Crude Futures
+      ]);
+      set('price-brent-val', brent);
+      set('price-wti-val',   wti);
+      sessionStorage.setItem(CACHE_KEY, JSON.stringify({ brent, wti, ts: Date.now() }));
+    } catch (e) {
       console.warn('Oil prices unavailable:', e);
     }
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    updatePrices();
-    setInterval(updatePrices, REFRESH);
+    // Mostrar caché inmediatamente si es reciente
+    try {
+      const c = JSON.parse(sessionStorage.getItem(CACHE_KEY) || 'null');
+      if (c && Date.now() - c.ts < CACHE_TTL) {
+        set('price-brent-val', c.brent);
+        set('price-wti-val',   c.wti);
+      }
+    } catch (_) {}
+
+    update();
+    setInterval(update, REFRESH);
   });
 })();
