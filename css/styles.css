@@ -426,14 +426,14 @@ p {
   background:
     linear-gradient(
       to bottom,
-      rgba(11, 45, 113, 0.55) 0%,
-      rgba(11, 45, 113, 0.25) 40%,
-      rgba(11, 45, 113, 0.45) 100%
+      rgba(11, 45, 113, 0.45) 0%,
+      rgba(11, 45, 113, 0.10) 35%,
+      rgba(11, 45, 113, 0.70) 100%
     ),
     linear-gradient(
       to right,
-      rgba(11, 45, 113, 0.65) 0%,
-      rgba(11, 45, 113, 0.15) 60%,
+      rgba(11, 45, 113, 0.75) 0%,
+      rgba(11, 45, 113, 0.30) 55%,
       rgba(11, 45, 113, 0.0) 100%
     );
   z-index: 1;
@@ -468,22 +468,23 @@ p {
 /* Slide 3 — yacimiento → foco derecha */
 .carousel-slide:nth-child(3) .carousel-slide__bg { background-position: 60% center; }
 
-/* Content box */
+/* Content — posicionado bottom-left sin recuadro, estilo Chevron */
 .carousel-content {
   position: absolute;
   bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 720px;
+  max-width: var(--max-width);
   padding-inline: var(--gutter);
-  z-index: 2;
+  z-index: 3;
 }
 .carousel-content__box {
-  background: rgba(0, 20, 60, 0.45);
-  padding: 40px 44px 44px;
-  text-align: center;
-  border-top: 2px solid var(--color-navy-light);
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  max-width: 660px;
 }
 .carousel-content__title {
   font-family: var(--font-serif);
@@ -492,24 +493,22 @@ p {
   letter-spacing: -0.03em;
   line-height: 1.05;
   color: #ffffff;
-  text-shadow: 0 2px 20px rgba(11, 45, 113, 0.4);
-  max-width: 700px;
-  margin-bottom: 16px;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+  max-width: 660px;
+  margin-bottom: 20px;
 }
 .carousel-content__desc {
   font-family: var(--font-sans);
   font-size: clamp(0.9rem, 1.3vw, 1.05rem);
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.7;
-  max-width: 520px;
-  margin-top: 1rem;
-  margin-bottom: 28px;
-  margin-inline: auto;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.65;
+  max-width: 500px;
+  margin-bottom: 32px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
 }
 .carousel-content .cta-arrow {
-  justify-content: center;
+  justify-content: flex-start;
   color: #fff;
 }
 .carousel-content .cta-arrow .cta-arrow__icon {
@@ -893,8 +892,6 @@ p {
   .img-mosaic { grid-template-columns: repeat(4, 1fr); }
 
   .footer__main { grid-template-columns: 1fr 1fr; }
-
-  .carousel-content__box { padding: 48px 64px 52px; }
 }
 
 /* ─── 19. RESPONSIVE — 1024px ───────────────────────────────── */
