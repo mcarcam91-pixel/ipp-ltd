@@ -9,24 +9,15 @@
     if (el && val != null) el.textContent = '$' + parseFloat(val).toFixed(2);
   }
 
-  async function fetchPrice(symbol) {
-    const url = 'https://query2.finance.yahoo.com/v8/finance/chart/'
-                + encodeURIComponent(symbol)
-                + '?interval=1m&range=1d';
-    const r = await fetch(url);
-    const d = await r.json();
-    return d.chart.result[0].meta.regularMarketPrice;
-  }
-
   async function update() {
     try {
-      const [brent, wti] = await Promise.all([
-        fetchPrice('BZ=F'),   // Brent Crude Futures
-        fetchPrice('CL=F'),   // WTI Crude Futures
-      ]);
-      set('price-brent-val', brent);
-      set('price-wti-val',   wti);
-      sessionStorage.setItem(CACHE_KEY, JSON.stringify({ brent, wti, ts: Date.now() }));
+      const res  = await fetch('/api/oil-prices');
+      const data = await res.json();
+      if (data.brent && data.wti) {
+        set('price-brent-val', data.brent);
+        set('price-wti-val',   data.wti);
+        sessionStorage.setItem(CACHE_KEY, JSON.stringify({ brent: data.brent, wti: data.wti, ts: Date.now() }));
+      }
     } catch (e) {
       console.warn('Oil prices unavailable:', e);
     }
